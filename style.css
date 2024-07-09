@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hr-1{
+    color: #00000000;
+    width: 400px;
+    margin: 0 auto;
+    border-top: 2px dotted #eee;
+}
+/* header start  */
+.nav-bar{
+    background-color: lightslategrey;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-head p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #eee;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.nav-menu ul{
+    margin: 20px;
+}
+.nav-menu ul li{
+    display: inline;
+    padding: 10px;
+    list-style: none;
+}
+.nav-menu ul li:hover{
+    background-color: rgb(90, 105, 119);
+    border-radius: 12px;
+}
+.nav-menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+/* header ends  */
+
+
+.main-contet{
+    display: flex;
+}
+/* main left start  */
+.content-left{
+    background-image: url(image/peilistin.jpg);
+    width: 25%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 3px 3px 9px black;
+    margin: 0 5px;
+    transition: all .3s;
+}
+.left-text{
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.623);
+    width: 80%;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.left-text:hover{
+    box-shadow: 5px 5px 9px black;
+    transform: scale(1.06);
+}
+.left-text h1{
+    font-size: 3rem;
+    color: #eee;
+    padding: 10px 0;
+}
+/* main left ends  */
+
+
+/* main main start  */
+.content-main{
+    background-image: url(image/bg\ islam.jpg);
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 3px 3px 9px black;
+    line-height: 50px;
+    overflow: auto;
+}
+.content-main p{
+    color: #eee;
+    font-size: 2rem;
+    text-align: justify;
+}
+.content-main h1{
+    color: #eee;
+    font-size: 3rem;
+    text-align: center;
+}
+.content-main h2{
+    color: #eee;
+    font-size: 3rem;
+    text-align: justify;
+}
+/* main main ends  */
+
+
+/* main right start  */
+.content-right{
+    background-image: url(image/makka.jpg);
+    width: 25%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 3px 3px 9px black;
+    margin: 0 5px;
+}
+.content-right h1{
+    text-align: center;
+}
+/* main right ends  */
+
+
+/* about me start  */
+.about-me-header{
+    text-align: center;
+}
+.about-me-header h1{
+    font-size: 2.4rem;
+}
+.about-me-cont{
+    margin-left: 70px;
+    text-align: justify;
+}
+/* about me ends  */
+
+
+/* contuct start  */
+#contuct-me{
+    min-height: 100vh;
+    background-color: #e8f0fe;
+    padding: 50px;
+    text-align: center;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.contuct-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.contuct-form{
+    text-align: left;
+}
+.contuct-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9f8;
+    color: #333;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: #45a049;
+}
+
+.contuct-info{
+    text-align: left;
+}
+.contuct-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.contuct-info p{
+    margin-bottom: 10px;
+    color: #555;
+}
+.contuct-info i{
+    color: #4caf50;
+    margin-right: 10px;
+}
+/* contuct ends  */
+
+
+/* footer start  */
+#footer{
+    background: #000;
+    padding: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-footer p{
+    color: #fff;
+    padding: 10px;
+}
+.content-footer p{
+    color: #fff;
+    padding: 10px;
+}
+/* footer ends  */
+
+@media screen and (max-width:829px){
+    .nav-bar{
+        display: block;
+    }
+    .nav-head p{
+        text-align: center;
+    }
+    .nav-menu ul li{
+        display: block;
+        text-align: center;
+        margin: 30px;
+        box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.274);
+    }
+    /* header ends  */
+
+
+    /* main start  */
+    .main-contet{
+        flex-direction: column;
+    }
+
+    .content-left{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .content-left:hover{
+        box-shadow: 8px 8px 20px black;
+    }
+    .content-main{
+        width: 90%;
+        margin: 10px auto;
+        transition: .3s;
+    }
+    .content-main h2{
+        text-align: center;
+    }
+    .content-main:hover{
+        box-shadow: 8px 8px 20px black;
+    }
+    .content-right{
+        width: 90%;
+        margin: 10px auto;
+        transition: all .3s;
+    }
+    .content-right:hover{
+        box-shadow: 8px 8px 20px black;
+    }
+
+    /* contuct start  */
+
+    .container{
+        padding: 20px;
+    }
+    .contuct-wrapper{
+        grid-template-columns: 1fr;
+    }
+    /* main ends  */
+
+
+    /* footer start  */
+
+    /* footer ends  */
+
+}
